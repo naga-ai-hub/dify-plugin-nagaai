@@ -1,0 +1,52 @@
+model: openai/gpt-6.1-sol
+label:
+  en_US: GPT-6.1 Sol
+model_type: llm
+features:
+  - agent-thought
+  - tool-call
+  - multi-tool-call
+  - stream-tool-call
+  - structured-output
+  - vision
+model_properties:
+  mode: chat
+  context_size: 1050000
+parameter_rules:
+  - name: temperature
+    use_template: temperature
+  - name: top_p
+    use_template: top_p
+  - name: max_tokens
+    use_template: max_tokens
+    default: 8192
+    min: 1
+    max: 128000
+  - name: reasoning_effort
+    label:
+      en_US: Reasoning effort
+    type: string
+    required: false
+    options:
+      - none
+      - minimal
+      - low
+      - medium
+      - high
+      - xhigh
+      - max
+    help:
+      en_US: How much the model reasons before it answers. NagaAI runs the nearest level the model supports.
+  - name: response_format
+    use_template: response_format
+    options:
+      - text
+      - json_object
+      - json_schema
+  - name: json_schema
+    use_template: json_schema
+pricing:
+  input: "0.5"
+  output: "2.5"
+  unit: "0.000001"
+  currency: USD
