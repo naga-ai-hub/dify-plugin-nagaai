@@ -1,6 +1,6 @@
-model: google/gemini-3.5-flash
+model: deepseek/deepseek-v4.1-flash
 label:
-  en_US: Gemini 3.5 Flash
+  en_US: DeepSeek V4.1 Flash
 model_type: llm
 features:
   - agent-thought
@@ -21,7 +21,7 @@ parameter_rules:
     use_template: max_tokens
     default: 8192
     min: 1
-    max: 64000
+    max: 32768
   - name: reasoning_effort
     label:
       en_US: Reasoning effort
@@ -46,7 +46,7 @@ parameter_rules:
   - name: json_schema
     use_template: json_schema
 pricing:
-  input: "0.375"
-  output: "2.25"
+  input: "0.02"
+  output: "0.3"
   unit: "0.000001"
   currency: USD

@@ -1,6 +1,6 @@
-model: minimax/minimax-m3
+model: anthropic/claude-opus-5.5
 label:
-  en_US: MiniMax M3
+  en_US: Claude Opus 5.5
 model_type: llm
 features:
   - agent-thought
@@ -21,7 +21,7 @@ parameter_rules:
     use_template: max_tokens
     default: 8192
     min: 1
-    max: 131072
+    max: 128000
   - name: reasoning_effort
     label:
       en_US: Reasoning effort
@@ -46,7 +46,7 @@ parameter_rules:
   - name: json_schema
     use_template: json_schema
 pricing:
-  input: "0.12"
-  output: "0.48"
+  input: "2"
+  output: "10"
   unit: "0.000001"
   currency: USD

@@ -17,10 +17,10 @@ The models below appear in every LLM model picker: LLM nodes, chatflows and agen
 
 | Model | Context (tokens) | Max output (tokens) |
 |---|---|---|
+| `anthropic/claude-opus-5.5` | 1,000,000 | 128,000 |
 | `anthropic/claude-sonnet-5.5` | 1,000,000 | 128,000 |
 | `openai/gpt-6.1-sol` | 1,050,000 | 128,000 |
-| `google/gemini-3.5-flash` | 1,048,576 | 64,000 |
-| `minimax/minimax-m3` | 1,000,000 | 131,072 |
+| `deepseek/deepseek-v4.1-flash` | 1,048,576 | 32,768 |
 
 **Other models:** choose **Add Model**, enter the id exactly as [`GET https://api.naga.ac/v1/models`](https://api.naga.ac/v1/models) lists it, and set its context size, tool calling and vision options from the same list. The list needs no key.
 
