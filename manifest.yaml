@@ -7,6 +7,8 @@ label:
 description:
   en_US: Chat models from many vendors through the NagaAI API, with tool calling, vision, structured output and reasoning effort.
 icon: icon.svg
+tags:
+  - llm
 resource:
   memory: 268435456
   permission:
